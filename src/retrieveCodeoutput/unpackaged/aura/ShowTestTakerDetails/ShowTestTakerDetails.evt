@@ -1,0 +1,4 @@
+<!--c:ShowTestTakerDetails Event-->
+<aura:event type="APPLICATION">
+        <aura:attribute name="oldcontactId" type="String" />
+</aura:event>

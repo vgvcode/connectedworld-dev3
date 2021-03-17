@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Exam Results Detail</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Exams Results Detail</value>
+    </caseValues>
+    <fields>
+        <label><!-- Choice1 --></label>
+        <name>Choice1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Choice2 --></label>
+        <name>Choice2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Choice3 --></label>
+        <name>Choice3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Choice4 --></label>
+        <name>Choice4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Choice5 --></label>
+        <name>Choice5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Choice6 --></label>
+        <name>Choice6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Choice7 --></label>
+        <name>Choice7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clicked Hint --></label>
+        <name>Clicked_Hint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Correct Answer --></label>
+        <name>Correct_Answer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Difficulty --></label>
+        <name>Difficulty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exam Instance --></label>
+        <name>Exam_Instance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exam --></label>
+        <name>Exam__c</name>
+        <relationshipLabel><!-- Exams Results Detail --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flex Tag 1 --></label>
+        <name>Flex_Tag_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flex Tag 2 --></label>
+        <name>Flex_Tag_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flex Tag 3 --></label>
+        <name>Flex_Tag_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flex Tag 4 --></label>
+        <name>Flex_Tag_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flex Tag 5 --></label>
+        <name>Flex_Tag_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hint --></label>
+        <name>Hint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image URL --></label>
+        <name>Image_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- My Exam --></label>
+        <name>My_Exam__c</name>
+        <relationshipLabel><!-- Exams Results Detail --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quest --></label>
+        <name>Quest__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score --></label>
+        <name>Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Student Answer --></label>
+        <name>Student_Answer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tags --></label>
+        <name>Tags__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test Taker --></label>
+        <name>Test_Taker__c</name>
+        <relationshipLabel><!-- Exams Results Detail --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Time Taken --></label>
+        <name>Time_Taken__c</name>
+    </fields>
+    <fields>
+        <label><!-- fCorrect --></label>
+        <name>fCorrect__c</name>
+    </fields>
+    <fields>
+        <label><!-- fIncorrect --></label>
+        <name>fIncorrect__c</name>
+    </fields>
+    <fields>
+        <label><!-- fOmit --></label>
+        <name>fOmit__c</name>
+    </fields>
+    <layouts>
+        <layout>Exam Results Detail Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Question --></label>
+            <section>Question</section>
+        </sections>
+        <sections>
+            <label><!-- Tags --></label>
+            <section>Tags</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

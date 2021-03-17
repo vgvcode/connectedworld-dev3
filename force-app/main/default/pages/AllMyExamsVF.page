@@ -1,0 +1,61 @@
+<apex:page Controller="ExamInstanceListController">
+    <apex:form >
+        <apex:pageBlock title="My Exams List" id="my_exams_list">            
+            <!-- My Exams List -->
+            <apex:pageBlockTable value="{! examInstances }" var="ei">
+                    <apex:column value="{! ei.descriptive_name__c }"/>
+                    <apex:column value="{! ei.test_taker__c }"/>
+                    <!-- this prints time without any formatting -->
+                    <!--<apex:column value="{! ei.start_time__c }"/>-->
+                    <apex:column headerValue="Start Time">
+                        <!--this prints the time in GMT -->
+                        <!--<apex:outputText value="{0,date,MM/dd/yyyy hh:mm a zz}">
+                            <apex:param value="{! ei.start_time__c}" />
+                        </apex:outputText>-->
+                        <!-- this converts time to local format using a custom component -->
+                        <c:locale_formatted_datetime date_time_value="{! ei.start_time__c}"/>
+                    </apex:column>
+                    <apex:column value="{! ei.time_taken__c }"/>
+                    <apex:column value="{! ei.duration__c }"/>
+                    <apex:column value="{! ei.fCorrect__c }"/>
+                    <apex:column value="{! ei.fNetScore__c }"/>
+                    <apex:column value="{! ei.fTtotal__c }"/>
+            </apex:pageBlockTable>
+            
+            <!-- Pagination -->
+            <table style="width: 100%">
+                <tr>
+                    <td>
+                        Page: <apex:outputText value=" {!PageNumber} of {! CEILING(ResultSize / PageSize) }"/>                    
+                    </td>            
+                    <td align="center">
+                        <!-- Previous page -->
+                        <!-- active -->
+                        <apex:commandLink action="{! Previous }" value="« Previous"
+                             rendered="{! HasPrevious }"/>
+                        <!-- inactive (no earlier pages) -->
+                        <apex:outputText style="color: #ccc;" value="« Previous"
+                             rendered="{! NOT(HasPrevious) }"/>
+                        &nbsp;&nbsp;  
+                        <!-- Next page -->
+                        <!-- active -->
+                        <apex:commandLink action="{! Next }" value="Next »"
+                             rendered="{! HasNext }"/>
+                        <!-- inactive (no more pages) -->
+                        <apex:outputText style="color: #ccc;" value="Next »"
+                             rendered="{! NOT(HasNext) }"/>            
+                    </td>
+                    
+                    <td align="right">
+                        Records per page:
+                        <apex:selectList value="{! sizeOfPage }" size="1">
+                            <apex:selectOption itemValue="5" itemLabel="5"/>
+                            <apex:selectOption itemValue="20" itemLabel="20"/>
+                            <apex:actionSupport event="onchange" reRender="my_exams_list" action="{! setSize}"/>
+                        </apex:selectList>                    
+                    </td>
+                </tr>
+            </table>            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,30 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" controller="fetchCoursesController" access="global">
+    <aura:attribute name="courseList" type="List" />
+    <aura:attribute name="headerSet" type="String[]" default="['Name','Provider', 'Start', 'End']"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />   
+	<lightning:navigation aura:id="navService"/>
+    
+	<div class="slds">
+		<table class="slds-table slds-table--bordered">
+			<thead>
+				<tr>
+					<aura:iteration items="{!v.headerSet}" var="field">
+						<th>{!field}</th>
+					</aura:iteration>
+				</tr>
+			</thead>
+			<tbody>
+				<aura:iteration items="{!v.courseList}" var="row">
+                    <tr>
+                        <!-- note field names are case sensitive -->
+						<td><lightning:button variant="base" label="{!row.Name__c}" title="{!row.Id}" onclick="{!c.navigateToCourseDetail}"/></td>
+                        <td>{!row.Provider__c}</td>
+                        <!--<td>{!row.fieldName__c}</td>-->
+                        <td>{!row.Start_Date__c}</td>
+                        <td>{!row.End_Date__c}</td>
+                    </tr>
+				</aura:iteration>
+			</tbody>
+		</table>
+	</div>
+</aura:component>

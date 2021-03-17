@@ -1,0 +1,4 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+	    <aura:handler event="c:EventShowPermissionSetsDetails" action="{!c.showPermissionSetsDetailsEventHandler}" />
+
+</aura:component>

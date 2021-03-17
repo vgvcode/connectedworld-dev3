@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Adaptive Exam</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Adaptive Exams</value>
+    </caseValues>
+    <fields>
+        <label><!-- Attempts --></label>
+        <name>Attempts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Criteria --></label>
+        <name>Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Difficulty --></label>
+        <name>Current_Difficulty__c</name>
+    </fields>
+    <fields>
+        <help><!-- The base adaptive exam --></help>
+        <label><!-- Adaptive Base Exam Number --></label>
+        <name>Exam__c</name>
+        <relationshipLabel><!-- Adaptive Exams --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- From --></label>
+        <name>From__c</name>
+    </fields>
+    <fields>
+        <label><!-- Min Attempts --></label>
+        <name>Min_Attempts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of questions --></label>
+        <name>Number_of_questions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question Fail Threshold --></label>
+        <name>Question_Fail_Threshold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question Pass Threshold --></label>
+        <name>Question_Pass_Threshold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Difficulty --></label>
+        <name>Target_Difficulty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test Taker --></label>
+        <name>Test_Taker__c</name>
+        <relationshipLabel><!-- Adaptive Exams --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- To --></label>
+        <name>To__c</name>
+    </fields>
+    <layouts>
+        <layout>Adaptive Exam Layout</layout>
+        <sections>
+            <label><!-- Adaptive Exam Name --></label>
+            <section>Adaptive Exam Name</section>
+        </sections>
+        <sections>
+            <label><!-- Criteria --></label>
+            <section>Criteria</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <errorUrl>https://eduvantage-dev-ed.my.salesforce.com?login=1</errorUrl>
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>UserId</identityMapping>
+    <issuer>https://astroforce.my.salesforce.com</issuer>
+    <loginUrl>https://astroforce.my.salesforce.com/idp/endpoint/HttpPost</loginUrl>
+    <name>astroforce SAML SSO Setting</name>
+    <oauthTokenEndpoint>https://connectedworld-dev3-dev-ed.my.salesforce.com/services/oauth2/token</oauthTokenEndpoint>
+    <redirectBinding>false</redirectBinding>
+    <requestSigningCertId>0P16g000001ksOY</requestSigningCertId>
+    <salesforceLoginUrl>https://connectedworld-dev3-dev-ed.my.salesforce.com</salesforceLoginUrl>
+    <samlEntityId>https://saml.salesforce.com/00D6g000001V3yvEAC</samlEntityId>
+    <samlVersion>SAML2_0</samlVersion>
+    <userProvisioning>false</userProvisioning>
+    <validationCert>MIIErDCCA5SgAwIBAgIOAWxDe9BKAAAAAA2yh0cwDQYJKoZIhvcNAQELBQAwgZAxKDAmBgNVBAMMH1NlbGZTaWduZWRDZXJ0XzMwSnVsMjAxOV8xNTI0NDMxGDAWBgNVBAsMDzAwRDRQMDAwMDAxZFhvczEXMBUGA1UECgwOU2FsZXNmb3JjZS5jb20xFjAUBgNVBAcMDVNhbiBGcmFuY2lzY28xCzAJBgNVBAgMAkNBMQwwCgYDVQQGEwNVU0EwHhcNMTkwNzMwMTUyNDQzWhcNMjAwNzMwMTIwMDAwWjCBkDEoMCYGA1UEAwwfU2VsZlNpZ25lZENlcnRfMzBKdWwyMDE5XzE1MjQ0MzEYMBYGA1UECwwPMDBENFAwMDAwMDFkWG9zMRcwFQYDVQQKDA5TYWxlc2ZvcmNlLmNvbTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzELMAkGA1UECAwCQ0ExDDAKBgNVBAYTA1VTQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJiS7Hw5bb28B0i5Bgf5RWKCeEVBuqQgGLdAshJzQ4CuW4pRvku0ZJoHgT/ykCdMwMYPsuL5tXRya2tc0j8c+UIboDVS3ySCY2FW6W0S+PTwPJ9cRlVZpzkljL3p0KLuZf6fE+D7sYKi/484fnuMh8UVJCqsWZB8RXTgr/Gx8bEb4+qDUht+yx3xuPxcueEI+g0eb2b3LbZCz74RHqLuQuFabigedvw5YbaE0uDMTlHQgdMVXNAOyv+23eWTO44QNqv5PpG5lVwr+UrHXbZRcsKorcH77tl0riSUTE+iJIsIpS/buOcexeOgkXwze7hfbNtH0sOq93vqGQQI13Y7HNUCAwEAAaOCAQAwgf0wHQYDVR0OBBYEFBS38XwPP2Y0eo8GplgJKudIgLCtMA8GA1UdEwEB/wQFMAMBAf8wgcoGA1UdIwSBwjCBv4AUFLfxfA8/ZjR6jwamWAkq50iAsK2hgZakgZMwgZAxKDAmBgNVBAMMH1NlbGZTaWduZWRDZXJ0XzMwSnVsMjAxOV8xNTI0NDMxGDAWBgNVBAsMDzAwRDRQMDAwMDAxZFhvczEXMBUGA1UECgwOU2FsZXNmb3JjZS5jb20xFjAUBgNVBAcMDVNhbiBGcmFuY2lzY28xCzAJBgNVBAgMAkNBMQwwCgYDVQQGEwNVU0GCDgFsQ3vQSgAAAAANsodHMA0GCSqGSIb3DQEBCwUAA4IBAQCF5THLIEBKJstO5tGg/t4+GLxb5TivtazBs3D7IkHiHNFg5tysZsiK5gteAppOnL7/1MDrYCQ/mjlbqcSIglvy+PInU1AT1arrPkHGFmP8QAnxTmDYJhM2+wbMjR14j6Pt2GZ5hYfpOiPp358z5KhczprtdRiP0jj0632e0P4fuEMSu0ifJ1dOOFGy7n8V2ndV/wtB2Q8nLy1DPk3ZKUKUODCsjiykd4lAia0eDOsVOh+zWo2aXiwJ6uvLK3g0Wzne5q6xdgGijnuYmJWdwer60lddeDBmMk3zmo1CmEgxDQQSQV5Blc/jeryPv2Qrdbrzejlbj/jiXjPbzulxPSbu</validationCert>
+</SamlSsoConfig>

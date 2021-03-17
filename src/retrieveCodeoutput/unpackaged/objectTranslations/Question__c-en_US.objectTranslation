@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Question</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Questions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Approval Status --></label>
+        <name>Approval_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Choice1 --></label>
+        <name>Choice1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Choice2 --></label>
+        <name>Choice2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Choice3 --></label>
+        <name>Choice3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Choice4 --></label>
+        <name>Choice4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Choice5 --></label>
+        <name>Choice5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Choice6 --></label>
+        <name>Choice6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Choice7 --></label>
+        <name>Choice7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Tag Key 1 --></label>
+        <name>Custom_Tag_Key_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Tag Key 2 --></label>
+        <name>Custom_Tag_Key_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Tag Value 1 --></label>
+        <name>Custom_Tag_Value_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Tag Value 2 --></label>
+        <name>Custom_Tag_Value_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Difficulty --></label>
+        <name>Difficulty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exam --></label>
+        <name>Exam__c</name>
+        <relationshipLabel><!-- Questions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Flex Tag 1 --></label>
+        <name>Flex_Tag_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flex Tag 2 --></label>
+        <name>Flex_Tag_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flex Tag 3 --></label>
+        <name>Flex_Tag_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flex Tag 4 --></label>
+        <name>Flex_Tag_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flex Tag 5 --></label>
+        <name>Flex_Tag_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Image --></label>
+        <name>Has_Image__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hint --></label>
+        <name>Hint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image URL --></label>
+        <name>Image_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Key --></label>
+        <name>Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question Statement --></label>
+        <name>Quest__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reuse Image URL --></label>
+        <name>Reuse_Image_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Reuse image from previous question --></help>
+        <label><!-- Reuse image --></label>
+        <name>Reuse_image__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subjects --></label>
+        <name>Subjects__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tags --></label>
+        <name>Tags__c</name>
+    </fields>
+    <fields>
+        <label><!-- Topics --></label>
+        <name>Topics__c</name>
+    </fields>
+    <fields>
+        <label><!-- Upload Status --></label>
+        <name>Upload_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- Upload only JPEG / JPG images here.  Do not type text in this field --></help>
+        <label><!-- Image --></label>
+        <name>image__c</name>
+    </fields>
+    <layouts>
+        <layout>Question Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Tags --></label>
+            <section>Custom Tags</section>
+        </sections>
+        <sections>
+            <label><!-- Exam --></label>
+            <section>Exam</section>
+        </sections>
+        <sections>
+            <label><!-- Image --></label>
+            <section>Image</section>
+        </sections>
+        <sections>
+            <label><!-- Question --></label>
+            <section>Question</section>
+        </sections>
+        <sections>
+            <label><!-- Tags --></label>
+            <section>Tags</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Multiple answer choices - all need to be right --></description>
+        <label><!-- Multiple answer --></label>
+        <name>Multiple_answer</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Only one right answer choice --></description>
+        <label><!-- Single answer --></label>
+        <name>Single_answer</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Blank choices must not precede non blank choices --></errorMessage>
+        <name>Blanks_Before_Non_Blanks</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Provide an image or a Reuse Image url, but not both --></errorMessage>
+        <name>Both_Image_and_Reuse_Image_URL_supplied</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Reuse image checked but image supplied --></errorMessage>
+        <name>Reuse_Image_Check_But_Image_Uploaded</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You need to supply a reuse image url --></errorMessage>
+        <name>Reuse_Image_Check_But_No_Reuse_Image_URL</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Reuse image checkbox is not checked but image url supplied --></errorMessage>
+        <name>Reuse_image_not_check_but_url_supplied</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Question must have a question statement, at least two answer choices --></errorMessage>
+        <name>Validate_Long_Text_Area_Fields</name>
+    </validationRules>
+</CustomObjectTranslation>

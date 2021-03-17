@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <attributes>
+        <formula>CASESAFEID($User.ContactId)</formula>
+        <key>contactId</key>
+    </attributes>
+    <attributes>
+        <formula>&quot;E-0006&quot;</formula>
+        <key>examId</key>
+    </attributes>
+    <contactEmail>vgvnv@hotmail.com</contactEmail>
+    <description>Math Level 1 - E-0006</description>
+    <label>Math Level 1</label>
+    <logoUrl>https://connectedworld-dev2-dev-ed--c.documentforce.com/servlet/servlet.ImageServer?id=0153i000000FApA&amp;oid=00D3i000000uyyA</logoUrl>
+    <samlConfig>
+        <acsUrl>https://varad-heroku-identity-java.herokuapp.com/_math_level1</acsUrl>
+        <encryptionType>AES_128</encryptionType>
+        <entityUrl>https://varad-heroku-identity-java.herokuapp.com/_math_level1</entityUrl>
+        <issuer>https://connectedworld-dev2-dev-ed.my.salesforce.com</issuer>
+        <samlNameIdFormat>Unspecified</samlNameIdFormat>
+        <samlSubjectType>Username</samlSubjectType>
+    </samlConfig>
+    <startUrl>https://varad-heroku-identity-java.herokuapp.com/_math_level1</startUrl>
+</ConnectedApp>

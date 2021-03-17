@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Long_Text_Area_Fields</fullName>
+    <active>true</active>
+    <description>Question Statement, Choice 1, Choice 2 are long text area fields that need to be validated to be non empty
+Others such as Key, Topic, Difficulty and Subject are enforced at the Database level</description>
+    <errorConditionFormula>OR(
+(LEN( Quest__c ) = 0),
+(LEN(  Choice1__c  ) = 0),
+(LEN(  Choice2__c  ) = 0)
+)</errorConditionFormula>
+    <errorMessage>Question must have a question statement, at least two answer choices</errorMessage>
+</ValidationRule>

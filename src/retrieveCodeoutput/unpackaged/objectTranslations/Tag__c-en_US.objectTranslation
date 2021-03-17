@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Tag</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Tags</value>
+    </caseValues>
+    <fields>
+        <label><!-- Correct Pct --></label>
+        <name>Correct_Pct__c</name>
+    </fields>
+    <fields>
+        <label><!-- Correct --></label>
+        <name>Correct__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exam Instance External Id --></label>
+        <name>Exam_Instance_External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incorrect --></label>
+        <name>Incorrect__c</name>
+    </fields>
+    <fields>
+        <label><!-- My Exam --></label>
+        <name>My_Exam__c</name>
+        <relationshipLabel><!-- Tags --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Omit --></label>
+        <name>Omit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tag Key --></label>
+        <name>Tag_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tag Level --></label>
+        <name>Tag_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test Taker --></label>
+        <name>Test_Taker__c</name>
+        <relationshipLabel><!-- Tags --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,16 @@
+<aura:component controller="TestTakerController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+	<aura:attribute name="contact" type="contact" />
+    <aura:attribute name="needhint" type="Boolean" default='false'/>
+	<!-- the attribute below is local to this component -->
+    <aura:attribute name="needhintSaved" type="Boolean" default='true' />
+    
+    <p class="detail-sub-header">Hints</p>
+    <ui:inputCheckbox aura:id="checkbox" label="Provide hints?" value="{!v.needhint}" change="{!c.handleCheckbox}"/>
+    <!-- Hide or display Save for needhint -->
+    <aura:if isTrue="{!v.needhintSaved}">
+        <!-- do nothing -->
+        <aura:set attribute="else">
+            <lightning:button variant="success" label="Save" title="Save" onclick="{! c.needHintSave }"/>
+        </aura:set>
+    </aura:if> 
+</aura:component>

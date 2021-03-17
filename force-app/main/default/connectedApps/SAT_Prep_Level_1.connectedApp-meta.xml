@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <attributes>
+        <formula>CASESAFEID($User.ContactId)</formula>
+        <key>contactId</key>
+    </attributes>
+    <attributes>
+        <formula>&quot;E-0002&quot;</formula>
+        <key>examId</key>
+    </attributes>
+    <contactEmail>vgvnv@hotmail.com</contactEmail>
+    <description>SAT Prep Level 1 - E0002</description>
+    <label>SAT Prep Level 1</label>
+    <logoUrl>https://connectedworld-dev2-dev-ed--c.documentforce.com/servlet/servlet.ImageServer?id=0153i000000F66a&amp;oid=00D3i000000uyyA</logoUrl>
+    <samlConfig>
+        <acsUrl>https://varad-heroku-identity-java.herokuapp.com/_sat_level1</acsUrl>
+        <encryptionType>AES_128</encryptionType>
+        <entityUrl>https://varad-heroku-identity-java.herokuapp.com/_sat_level1</entityUrl>
+        <samlNameIdFormat>Unspecified</samlNameIdFormat>
+        <samlSubjectType>Username</samlSubjectType>
+    </samlConfig>
+    <startUrl>https://varad-heroku-identity-java.herokuapp.com/_sat_level1</startUrl>
+</ConnectedApp>

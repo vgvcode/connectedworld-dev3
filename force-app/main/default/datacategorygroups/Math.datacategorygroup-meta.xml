@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <label>Algebra</label>
+            <name>Algebra</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Calculus</label>
+            <name>Calculus</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Geometry</label>
+            <name>Geometry</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>Math</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

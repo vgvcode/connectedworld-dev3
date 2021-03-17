@@ -1,0 +1,21 @@
+.THIS {
+}
+
+.THIS .column-left {
+  background-color: white;
+  float: left;
+  width: 25%;
+  padding: 30px;
+}
+
+.THIS .column-right {
+  width: 70%;
+  float: right;
+  padding: 30px;
+}
+
+.THIS .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

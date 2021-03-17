@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reuse_image_not_check_but_url_supplied</fullName>
+    <active>false</active>
+    <errorConditionFormula>(Reuse_image__c = FALSE) &amp;&amp; NOT ISBLANK( Reuse_Image_URL__c )</errorConditionFormula>
+    <errorMessage>Reuse image checkbox is not checked but image url supplied</errorMessage>
+</ValidationRule>

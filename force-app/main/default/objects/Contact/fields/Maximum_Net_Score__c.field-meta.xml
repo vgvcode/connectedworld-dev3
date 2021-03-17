@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Maximum_Net_Score__c</fullName>
+    <externalId>false</externalId>
+    <label>Maximum Net Score</label>
+    <summarizedField>Exam_Instance__c.fNetScore_Pct__c</summarizedField>
+    <summaryForeignKey>Exam_Instance__c.Test_Taker__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <type>Summary</type>
+</CustomField>

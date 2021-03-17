@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Both_Image_and_Reuse_Image_URL_supplied</fullName>
+    <active>false</active>
+    <errorConditionFormula>LEN(image__c) = 0</errorConditionFormula>
+    <errorMessage>Provide an image or a Reuse Image url, but not both</errorMessage>
+</ValidationRule>

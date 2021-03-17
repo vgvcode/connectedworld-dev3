@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>vgvnv@hotmail.com</contactEmail>
+    <label>sample nodejs sp app</label>
+    <logoUrl>https://login.salesforce.com/logos/Custom/Hex_Primary/icon.svg</logoUrl>
+    <samlConfig>
+        <acsUrl>http://localhost:3000/login/callback</acsUrl>
+        <encryptionType>AES_128</encryptionType>
+        <entityUrl>http://localhost:3000</entityUrl>
+        <issuer>https://connectedworld-dev2-dev-ed.my.salesforce.com</issuer>
+        <samlNameIdFormat>Unspecified</samlNameIdFormat>
+        <samlSubjectType>Username</samlSubjectType>
+    </samlConfig>
+    <startUrl>http://localhost:3000</startUrl>
+</ConnectedApp>

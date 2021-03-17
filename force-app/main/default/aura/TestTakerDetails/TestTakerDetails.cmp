@@ -1,0 +1,90 @@
+<aura:component controller="TestTakerController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+    <aura:handler event="c:EventShowTestTakerDetails" action="{!c.showTestTakerDetailsEventHandler}" />
+	<aura:attribute name="contact" type="contact" />
+	<aura:attribute name="count" type="Integer" default='0' />
+	<aura:attribute name="avgcorrect" type="Double" default='0.0' />
+	<aura:attribute name="avgtime" type="Double" default='0' />
+    <aura:attribute name="psoptions" type="List" default="[]"/>
+    <aura:attribute name="psvalues" type="List" default="[]"/>
+    <aura:attribute name="adaptivecriteria" type="String" default='' />
+    <aura:attribute name="examdescnames" type="List" default="[]" />
+    <aura:attribute name="examnames" type="List" default="[]" />
+    <aura:attribute name="reportTypes" type="List" default="[{ 'name': 'By Topic and Difficulty', 'id': '00O3i000002p4zQEAQ' },{ 'name': 'By Question', 'id': '00O3i000002p54QEAQ' },{ 'name': 'By Exam', 'id': '00O3i000002p92xEAA' },{ 'name': 'By Time Taken', 'id': '00O3i000002pBxXEAU'}]" />
+    <aura:attribute name="reports" type="List" default="[]" />
+    <aura:attribute name="initial" type="Boolean" default='true' />
+    <!--<aura:attribute name="optionsSaved" type="Boolean" default='true' />-->
+    <aura:attribute name="needhint" type="Boolean" default='false'/>
+    <!--<aura:attribute name="needhintSaved" type="Boolean" default='true' />-->
+
+    <div>
+        <aura:if isTrue="{!v.initial}">
+            <p class="detail-header">Select a Test Taker from the list</p>        
+        <aura:set attribute="else">
+                <aura:if isTrue="{!not(empty(v.contact))}">
+                    <p class="detail-header">{!v.contact.Name}</p>
+                    <p class="detail-item">Total number of exams: {!v.count}</p>
+                    <p class="detail-item">Average score:<lightning:formattedNumber value="{!v.avgcorrect}" style="decimal" maximumFractionDigits="2" /></p>
+                    <p class="detail-item">Average time taken:<lightning:formattedNumber value="{!v.avgtime}" style="decimal" maximumFractionDigits="2" /> minute(s)</p>
+                    <aura:if isTrue="{!not(empty(v.adaptivecriteria))}">
+                        <p class="detail-item">Adaptive Criteria:<pre>{!v.adaptivecriteria}</pre></p>
+                    </aura:if>
+                    <aura:if isTrue="{!not(empty(v.exams))}">
+                        <p class="detail-item">Tests taken: {!join(',', v.exams)}</p>
+                    </aura:if>
+                    <br></br><br></br>
+                    
+                    <c:TestTakerReports reports="{!v.reports}"/>
+                    
+                    <!--<p class="detail-sub-header">Reports</p>
+                    <aura:iteration items="{!v.reports}" var="item" indexVar="index">
+                            <p class="detail-item">{!item.name}</p>
+                        	<ul class="slds-list_dotted">
+                                <aura:iteration items="{!item.reports}" var="item2">
+                                	<li>
+                            			<a class="detail-link" href="{!item2.url}">{!item2.name}</a>                    
+                        			</li>
+                                </aura:iteration>
+                        	</ul>
+                    </aura:iteration>-->
+					<br></br><br></br>
+
+                    <c:TestTakerHints contact="{!v.contact}" needhint="{!v.needhint}"/>
+                    
+                    <!--<p class="detail-sub-header">Hints</p>
+                    <ui:inputCheckbox aura:id="checkbox" label="Provide hints?" value="{!v.needhint}" change="{!c.handleCheckbox}"/>-->
+                    <!-- Hide or display Save for needhint -->
+        			<!--<aura:if isTrue="{!v.needhintSaved}">-->
+                        <!-- do nothing -->
+                    <!--<aura:set attribute="else">
+	    				<lightning:button variant="success" label="Save" title="Save" onclick="{! c.needHintSave }"/>
+                    </aura:set>
+                    </aura:if>-->                 
+					<br></br><br></br>
+                    
+                    <c:TestTakerPermissions contact="{!v.contact}" psoptions="{!v.psoptions}" psvalues="{!v.psvalues}"/>
+                    
+                    <!--<p class="detail-sub-header">Permissions</p>
+                    <lightning:dualListbox name="multipleOptions"  
+                           label= "Select Options" 
+                           sourceLabel="Available" 
+                           selectedLabel="Selected" 
+                           options="{!v.psoptions}" 
+                           value="{!v.psvalues}" 
+                           onchange="{! c.handleOptionsChange }"/>-->
+                    
+                    <!-- Hide or display Save for options -->
+                    <!--<br></br>
+        			<aura:if isTrue="{!v.optionsSaved}">-->
+                        <!-- do nothing -->
+                    <!--<aura:set attribute="else">
+	    				<lightning:button variant="success" label="Save" title="Save" onclick="{! c.optionsSave }"/>
+                    </aura:set>
+                    </aura:if>-->                 
+                <aura:set attribute="else">
+                    <p class="detail-header-error">No data found</p>
+                </aura:set>
+                </aura:if>
+        </aura:set>
+        </aura:if> 
+    </div>
+</aura:component>

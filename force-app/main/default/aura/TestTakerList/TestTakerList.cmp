@@ -1,0 +1,16 @@
+<aura:component controller="TestTakerController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+    <aura:attribute name="contacts" type="contact[]" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:handler event="c:SearchKeyChange" action="{!c.searchKeyChange}" />
+    <aura:registerEvent name="EventShowTestTakerDetails" type="c:EventShowTestTakerDetails" />
+    <div class="slds-scrollable_y" style="height:40rem;width:24rem">
+        <ul>
+            <aura:iteration items="{!v.contacts}" var="contact">
+                <li class="listitem">
+                	<lightning:button variant="base" label="{! contact.Name}" title="{! contact.Id}" 
+                                      onclick="{! c.fireShowDetailsEvent }"/>
+                </li>
+            </aura:iteration>
+        </ul>	
+    </div>
+</aura:component>

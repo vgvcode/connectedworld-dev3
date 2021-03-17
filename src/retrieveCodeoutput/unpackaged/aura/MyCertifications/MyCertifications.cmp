@@ -1,0 +1,26 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" controller="FetchCertificationsController" access="global">
+    <aura:attribute name="certificationList" type="List" />
+    <aura:attribute name="headerSet" type="String[]" default="['ID','Name','Expiry Date']"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />   
+
+	<div class="slds">
+		<table class="slds-table slds-table--bordered">
+			<thead>
+				<tr>
+					<aura:iteration items="{!v.headerSet}" var="field">
+						<th> {!field}</th>
+					</aura:iteration>
+				</tr>
+			</thead>
+			<tbody>
+				<aura:iteration items="{!v.certificationList}" var="row">
+                    <tr>
+                        <td>{!row.Certificate_ID__c}</td>
+                        <td>{!row.Certification_Name__c}</td>
+                        <td>{!row.Expiry_Date__c}</td>
+                    </tr>
+				</aura:iteration>
+			</tbody>
+		</table>
+	</div>
+</aura:component>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Base Exam</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Base Exams</value>
+    </caseValues>
+    <fields>
+        <label><!-- Descriptive Name --></label>
+        <name>Descriptive_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration --></label>
+        <name>Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of adaptive questions --></label>
+        <name>Number_of_adaptive_questions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of questions --></label>
+        <name>Number_of_questions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question Bank Exam --></label>
+        <name>Question_Bank_Exam__c</name>
+        <relationshipLabel><!-- Base Exams --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Shuffle Questions --></label>
+        <name>Shuffle_Questions__c</name>
+    </fields>
+    <layouts>
+        <layout>Adaptive Exam Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Exam Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Question Bank Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Standard Exam Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Adaptive Exam --></label>
+        <name>Adaptive_Exam</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Question Bank --></label>
+        <name>Question_Bank</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standard Exam --></label>
+        <name>Standard_Exam</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

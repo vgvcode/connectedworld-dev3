@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Question_Bank</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Compact_Standard_Exam_Layout</compactLayoutAssignment>
+    <label>Question Bank</label>
+</RecordType>

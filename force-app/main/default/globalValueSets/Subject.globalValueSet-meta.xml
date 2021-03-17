@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>SAT</fullName>
+        <default>false</default>
+        <label>SAT</label>
+    </customValue>
+    <customValue>
+        <fullName>ACT</fullName>
+        <default>false</default>
+        <label>ACT</label>
+    </customValue>
+    <customValue>
+        <fullName>AP Math</fullName>
+        <default>false</default>
+        <label>AP Math</label>
+    </customValue>
+    <customValue>
+        <fullName>AP English</fullName>
+        <default>false</default>
+        <label>AP English</label>
+    </customValue>
+    <customValue>
+        <fullName>GRE</fullName>
+        <default>false</default>
+        <label>GRE</label>
+    </customValue>
+    <customValue>
+        <fullName>History</fullName>
+        <default>false</default>
+        <label>History</label>
+    </customValue>
+    <customValue>
+        <fullName>Geography</fullName>
+        <default>false</default>
+        <label>Geography</label>
+    </customValue>
+    <customValue>
+        <fullName>Logic</fullName>
+        <default>false</default>
+        <label>Logic</label>
+    </customValue>
+    <customValue>
+        <fullName>Math</fullName>
+        <default>false</default>
+        <label>Math</label>
+    </customValue>
+    <customValue>
+        <fullName>English</fullName>
+        <default>false</default>
+        <label>English</label>
+    </customValue>
+    <customValue>
+        <fullName>TOEFL</fullName>
+        <default>false</default>
+        <label>TOEFL</label>
+    </customValue>
+    <customValue>
+        <fullName>Operational Excellence</fullName>
+        <default>false</default>
+        <label>Operational Excellence</label>
+    </customValue>
+    <masterLabel>Subject</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

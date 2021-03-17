@@ -1,0 +1,12 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+    <!--<link href='/resource/simple_2_column/' rel='stylesheet' />-->
+    <div class="row">
+      <div class="column-left">
+      	<c:TestTakerSearchBar />
+      	<c:TestTakerList />
+      </div>
+      <div class="column-right">
+        <c:TestTakerDetailsSettings />
+      </div>
+    </div>
+</aura:component>

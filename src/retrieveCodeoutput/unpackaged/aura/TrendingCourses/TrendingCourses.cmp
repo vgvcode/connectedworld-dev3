@@ -1,0 +1,30 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" controller="TrendingCoursesController" access="global">
+    <aura:attribute name="courseList" type="List" />
+    <aura:attribute name="courseId" type="String" />
+    <aura:attribute name="headerSet" type="String[]" default="['Name', 'Number Registered', 'Provider', 'Start', 'End']"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />   
+	
+	<div class="slds">
+		<table class="slds-table slds-table--bordered">
+			<thead>
+				<tr>
+					<aura:iteration items="{!v.headerSet}" var="field">
+						<th>{!field}</th>
+					</aura:iteration>
+				</tr>
+			</thead>
+			<tbody>
+				<aura:iteration items="{!v.courseList}" var="row" indexVar="index">
+                    <tr>
+                        <!-- note the field names are case sensitive -->
+						<td><lightning:button variant="base" label="{!row.Name__c}" title="{!row.Id}" onclick="{!c.navigateToCourseDetail}"/></td>
+                        <td>{!row.Number_registered__c}</td>
+                        <td>{!row.Provider__c}</td>
+                        <td>{!row.Start_Date__c}</td>
+                        <td>{!row.End_Date__c}</td>
+                    </tr>
+				</aura:iteration>
+			</tbody>
+		</table>
+	</div>
+</aura:component>

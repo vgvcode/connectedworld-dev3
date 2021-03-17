@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>vgvnv@hotmail.com</contactEmail>
+    <label>Lean Six Sigma Level 1</label>
+    <logoUrl>https://connectedworld-dev2-dev-ed--c.documentforce.com/servlet/servlet.ImageServer?id=0153i000000FLUT&amp;oid=00D3i000000uyyA</logoUrl>
+    <samlConfig>
+        <acsUrl>https://varad-heroku-identity-java.herokuapp.com/_lean6s_level1</acsUrl>
+        <encryptionType>AES_128</encryptionType>
+        <entityUrl>https://varad-heroku-identity-java.herokuapp.com/_lean6s_level1</entityUrl>
+        <issuer>https://connectedworld-dev2-dev-ed.my.salesforce.com</issuer>
+        <samlNameIdFormat>Unspecified</samlNameIdFormat>
+        <samlSubjectType>Username</samlSubjectType>
+    </samlConfig>
+    <startUrl>https://varad-heroku-identity-java.herokuapp.com/_lean6s_level1</startUrl>
+</ConnectedApp>

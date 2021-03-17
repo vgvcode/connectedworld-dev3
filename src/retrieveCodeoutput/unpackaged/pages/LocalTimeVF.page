@@ -1,0 +1,32 @@
+<apex:page standardController="Account" tabStyle="Account">
+<!--
+	Created by: Greg Hacic
+	Last Update: 5 February 2011 by Greg Hacic
+	Questions?: greg@interactiveties.com
+	Copyright (c) 2011 Interactive Ties LLC
+-->
+<apex:sectionHeader title="Visualforce Example" subtitle="{!Account.Name}"></apex:sectionHeader>
+	<apex:pageMessages ></apex:pageMessages>
+	<apex:form >
+		<apex:pageBlock title="Account Information" mode="detail">
+			<apex:pageBlockSection columns="2" title="General Information">
+				<apex:outputField value="{!Account.Name}"></apex:outputField>
+				<apex:outputField value="{!Account.OwnerId}"></apex:outputField>
+				<apex:outputField value="{!Account.Site}"></apex:outputField>
+				<apex:outputField value="{!Account.Website}"></apex:outputField>
+			</apex:pageBlockSection>
+			<apex:pageBlockSection columns="2" title="Unformatted System Information">
+				<apex:outputField value="{!Account.CreatedById}">
+					<apex:outputText value=", {0,date,M/d/yyyy h:mm a}">
+						<apex:param value="{!Account.CreatedDate}"></apex:param>
+					</apex:outputText>
+				</apex:outputField>
+				<apex:outputField value="{!Account.LastModifiedById}">, <apex:outputText value="{!Account.LastModifiedDate}"></apex:outputText></apex:outputField>
+			</apex:pageBlockSection>
+			<apex:pageBlockSection columns="2" title="Formatted System Information">
+				<apex:outputField value="{!Account.CreatedById}">, <c:locale_formatted_datetime date_time_value="{!Account.CreatedDate}"></c:locale_formatted_datetime></apex:outputField>
+				<apex:outputField value="{!Account.LastModifiedById}">, <c:locale_formatted_datetime date_time_value="{!Account.LastModifiedDate}"></c:locale_formatted_datetime></apex:outputField>
+			</apex:pageBlockSection>
+		</apex:pageBlock>
+	</apex:form>
+</apex:page>

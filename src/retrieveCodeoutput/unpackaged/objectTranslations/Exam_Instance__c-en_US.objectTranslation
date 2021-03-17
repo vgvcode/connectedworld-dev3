@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>My Exam</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>My Exams</value>
+    </caseValues>
+    <fields>
+        <label><!-- Adaptive Exam --></label>
+        <name>Adaptive_Exam__c</name>
+        <relationshipLabel><!-- My Exams --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Descriptive Name --></label>
+        <name>Descriptive_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration --></label>
+        <name>Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Time --></label>
+        <name>End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Base Exam --></label>
+        <name>Exam__c</name>
+        <relationshipLabel><!-- My Exams --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsLive --></label>
+        <name>IsLive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Time --></label>
+        <name>Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test Taker --></label>
+        <name>Test_Taker__c</name>
+        <relationshipLabel><!-- My Exams --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Time Taken --></label>
+        <name>Time_Taken__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Difficulty --></label>
+        <name>fAverage_Difficulty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Correct --></label>
+        <name>fCorrect__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incorrect --></label>
+        <name>fIncorrect__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Score Pct --></label>
+        <name>fNetScore_Pct__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Score --></label>
+        <name>fNetScore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Omit --></label>
+        <name>fOmit__c</name>
+    </fields>
+    <fields>
+        <label><!-- fSumOfDifficulty --></label>
+        <name>fSumOfDifficulty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total --></label>
+        <name>fTtotal__c</name>
+    </fields>
+    <layouts>
+        <layout>Exam Instance Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Score --></label>
+            <section>Score</section>
+        </sections>
+        <sections>
+            <label><!-- Time --></label>
+            <section>Time</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

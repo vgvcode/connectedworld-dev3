@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <label>Reading</label>
+            <name>Reading</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Grammar</label>
+            <name>Grammar</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Writing</label>
+            <name>Writing</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>English</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

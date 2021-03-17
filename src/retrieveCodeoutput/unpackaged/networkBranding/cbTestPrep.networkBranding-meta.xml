@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NetworkBranding xmlns="http://soap.sforce.com/2006/04/metadata">
+    <loginFooterText>connectedworldtech.com</loginFooterText>
+    <loginLogo>Communities_Shared_Document_Folder/EduVantage_png.png</loginLogo>
+    <loginLogoName>EduVantage.png</loginLogoName>
+    <loginPrimaryColor>#1797C0</loginPrimaryColor>
+    <loginQuaternaryColor>#B1BAC1</loginQuaternaryColor>
+    <network>TestPrep</network>
+    <primaryColor>#2A61F3</primaryColor>
+    <primaryComplementColor>#FFFFFF</primaryComplementColor>
+    <quaternaryColor>#BDCDFB</quaternaryColor>
+    <quaternaryComplementColor>#222222</quaternaryComplementColor>
+    <secondaryColor>#3E0D90</secondaryColor>
+    <tertiaryColor>#F1F164</tertiaryColor>
+    <tertiaryComplementColor>#222222</tertiaryComplementColor>
+    <zeronaryColor>#4B10AF</zeronaryColor>
+    <zeronaryComplementColor>#FFFFFF</zeronaryComplementColor>
+</NetworkBranding>

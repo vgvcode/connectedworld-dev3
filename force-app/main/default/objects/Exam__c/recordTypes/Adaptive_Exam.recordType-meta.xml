@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Adaptive_Exam</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Compact_Adaptive_Exam_Layout</compactLayoutAssignment>
+    <label>Adaptive Exam</label>
+</RecordType>

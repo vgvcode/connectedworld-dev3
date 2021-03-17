@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>vgvnv@hotmail.com</contactEmail>
+    <label>Vocabulary Level 3</label>
+    <logoUrl>https://connectedworld-dev2-dev-ed--c.documentforce.com/servlet/servlet.ImageServer?id=0153i000000FESl&amp;oid=00D3i000000uyyA</logoUrl>
+    <samlConfig>
+        <acsUrl>https://varad-heroku-identity-java.herokuapp.com/_vocabulary_level3</acsUrl>
+        <encryptionType>AES_128</encryptionType>
+        <entityUrl>https://varad-heroku-identity-java.herokuapp.com/_vocabulary_level3</entityUrl>
+        <samlNameIdFormat>Unspecified</samlNameIdFormat>
+        <samlSubjectType>Username</samlSubjectType>
+    </samlConfig>
+    <startUrl>https://varad-heroku-identity-java.herokuapp.com/_vocabulary_level3</startUrl>
+</ConnectedApp>
